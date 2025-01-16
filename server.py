@@ -35,6 +35,8 @@ def wetter_abfragen():
 
     plt.xticks([])
     plt.savefig("static/img/wetter.jpg")
+    plt.clf()
+    plt.close()
    # plt.show()
 
     return render_template("wetter.html")
